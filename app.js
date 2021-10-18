@@ -63,8 +63,73 @@ function addQuestion(arr) {
 
 function typeNum(arr) {
    let num = arr.filter((numbers) =>{
-       numbers == "number"
+      return typeof numbers == "number"
    })
 
    return num;
 }
+
+
+// CHALLENGE 7
+
+
+function containsAnd(arr) {
+    let contAnd = arr.filter((and)=>{
+          return  and.includes('and')
+    })
+    return contAnd
+}
+
+
+// CHALLENGE 8
+function oddValues(arr) {
+    let oddNum = arr.filter((odd)=>{
+        return  odd.includes(odd != 2 )
+  })
+  return oddNum;
+}
+
+
+
+// objects CHALLENGE 
+
+// CHALLENGE 1
+
+let checkValues = (obj, value) => {
+      let ob =  Object.values(obj).includes(value) 
+     return ob; 
+}
+
+
+// CHALLENGE 2
+let courseInfo = {
+    name: "Code 301",
+    duration: { dayTrack: "4 weeks", eveningTrack: "8 weeks" },
+    topics: [
+      "SMACSS",
+      "APIs",
+      "NodeJS",
+      "SQL",
+      "jQuery",
+      "functional programming",
+    ],
+    finalExam: true,
+  };
+
+  let getCourseKeys = (obj) => {
+    return Object.keys(courseInfo)
+  };
+
+  // CHALLENGE 3
+
+
+  const updateNumbers = (obj) => {
+      return JSON.stringify(obj)
+  };
+  
+  
+  
+
+  // CHALLENGE 4
+  // CHALLENGE 5
+  // CHALLENGE 6
